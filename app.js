@@ -15,9 +15,9 @@ app.use(express.json());
 // routes
 app.use('/split-payments/compute', router);
 
-// app.get('/', (req, res) => {
-//   res.send('LannisterPay(TPSS)');
-// });
+app.get('/', (req, res) => {
+  res.send('LannisterPay(TPSS)');
+});
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
